@@ -1,0 +1,24 @@
+service {
+
+  import ic_cdk;
+
+
+  update_weather_state: () -> ();
+
+ 
+  get_weather_state: () -> record {
+    temperature: nat32;
+    pressure: nat32;
+    humidity: nat32;
+    wind_speed: nat32;
+  };
+
+
+};
+
+record WeatherState {
+  temperature: nat32;
+  pressure: nat32;
+  humidity: nat32;
+  wind_speed: nat32;
+};
